@@ -1,23 +1,24 @@
 package MODUL2_DAFFA;
 
 public class MainApp {
-    public static void main(String[] args) {
-        perangkat Perangkat = new perangkat(drive "AppData", ram : 16, processor : 1.8f );
+    public static void main(String[] args) throws Exception {
+        perangkat Perangkat = new perangkat("Adata", 16, 1.8f );
         Perangkat.informasi();
         System.out.println();
 
-        laptop Laptop = new laptop (drive : "Gege", ram : 16, processor : 2.4f, webcam : true);
+        laptop Laptop = new laptop ("Seagate", 16, 2.4f, true);
         Laptop.informasi();
-        Laptop.openGame(gameName : "Valorant");
-        Laptop.sendEmail(email : "daffaganteng@gmail.com");
-        Laptop.sendEmail(email1 : "daffaganteng@gmail.com", email2 : "daffaganteng123@gmail.com");
+        Laptop.openGame("Valorant");
+        Laptop.sendEmail("daffaganteng@gmail.com");
+        Laptop.sendEmail("daffaganteng@gmail.com", "daffaganteng123@gmail.com");
         System.out.println();
 
-        handphone hp = new phone (drive : "Sandisk", ram : 16, processor :2.2f, fingerprint : true);
+        handphone hp = new handphone("sandsik", 8,2.2f,true);
         hp.informasi();
-        h.telephone(phoneNumber : 089123456);
-        h.sms(phoneNumber : 089123456);
-        h.sms(phoneNumber1 : 08987654, phoneNumber2 : 089167854);
+        hp.telephone(62812345);
+        hp.sms(62812345);
+        hp.sms(62812345, 62854321);
         System.out.println();
+
     }
 }
